@@ -17,7 +17,8 @@ namespace TimerConsole
 {
     class MyTimer : System.Timers.Timer
     {
-        public MyTimer (double interval):base(interval)
+        public MyTimer(double interval)
+            : base(interval)
         {
             timer1 = new Stopwatch();
             timer2 = new Stopwatch();
@@ -50,7 +51,7 @@ namespace TimerConsole
 
         public static void t_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-            Console.Clear();            
+            Console.Clear();
 
             ts1 = timer1.Elapsed;
             ts2 = timer2.Elapsed;
